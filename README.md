@@ -15,4 +15,4 @@ A machine learning system that classifies prompts using embeddings from a pre-tr
 - `embedding_script.py` - Loads dataset, generates and saves embeddings
 - `train_classifier.py` - Trains and evaluates the classification model
 - `classifier_model.pkl` - Trained model file
-- `prompts.csv` — Dataset file
+- `prompts.csv` - Dataset file
