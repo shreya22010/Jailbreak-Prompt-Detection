@@ -1,46 +1,18 @@
-Jailbreak Hackathon Project – Prompt Classification
+# Jailbreak Prompt Classification
 
-This project was developed as part of the MIT Bangalore hackathon.
-The main goal was to build a system that can classify prompts using embeddings generated from a pre-trained language model and then train a classifier to categorize them accurately.
+A machine learning system that classifies prompts using embeddings from a pre-trained language model.
 
-My Contribution
+## What it does
+- Loads prompt datasets and generates embeddings using Sentence Transformers
+- Trains a classifier to categorize prompts accurately
+- Evaluates model performance on test data
 
-I worked specifically on the scripts and setup for generating embeddings, training the classifier, and preparing files for handover.
-On Day 1, I wrote and tested the embedding_script.py file. This script loads the dataset of prompts from a CSV file, uses a Sentence Transformer model to generate embeddings, and saves those embeddings for later use.
+## Tech Stack
+- **Language:** Python
+- **Libraries:** Pandas, NumPy, Sentence Transformers, Scikit-learn
 
-On Day 2, I created the train_classifier.py file. This script loads the embeddings, splits the data into training and testing sets, trains a classification model, and evaluates its performance.
-
-On Day 3, I prepared the files for handover, which included:
-
-The trained model file (classifier_model.pkl)
-
-The dataset file (prompts.csv)
-
-Both Python scripts (embedding_script.py and train_classifier.py)
-
-These files were shared with my teammate  to integrate into the final system.
-
-Tools and Libraries Used
-
-Python
-
-Pandas – for loading and managing data
-
-NumPy – for handling arrays and numerical operations
-
-Sentence Transformers – for generating high-quality embeddings from text
-
-Scikit-learn – for training and evaluating the classifier model
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Project Structure
+- `embedding_script.py` — Loads dataset, generates and saves embeddings
+- `train_classifier.py` — Trains and evaluates the classification model
+- `classifier_model.pkl` — Trained model file
+- `prompts.csv` — Dataset file
